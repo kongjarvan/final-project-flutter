@@ -55,7 +55,7 @@ Padding _bulidStore(String img, String storeName) {
             fit: BoxFit.cover,
           ),
         ),
-        SizedBox(width: 8),
+        SizedBox(width: 16),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

@@ -19,44 +19,6 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(
-              "경남 김해시 외동 89754-4번지",
-              style: textTheme().headline1,
-              textAlign: TextAlign.start,
-            ),
-            SizedBox(width: 4),
-            Icon(
-              CupertinoIcons.chevron_down,
-              size: 15,
-              color: Colors.black,
-            ),
-            SizedBox(width: 36),
-            Icon(
-              CupertinoIcons.bell,
-              size: 35,
-              color: Colors.black,
-            ),
-            SizedBox(width: 4),
-            Icon(
-              CupertinoIcons.search,
-              size: 35,
-              color: Colors.black,
-            ),
-          ],
-        ),
-        bottom: PreferredSize(
-          preferredSize: Size.fromHeight(0.5),
-          child: Divider(
-            thickness: 1,
-            height: 1,
-            color: Colors.grey,
-          ),
-        ),
-      ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: (index) {
           setState(() {
@@ -69,7 +31,15 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(label: "검색", icon: Icon(CupertinoIcons.search)),
           BottomNavigationBarItem(label: "찜한가게", icon: Icon(CupertinoIcons.heart)),
           BottomNavigationBarItem(label: "주문내역", icon: Icon(CupertinoIcons.doc_plaintext)),
-          BottomNavigationBarItem(label: "My배민", icon: Icon(CupertinoIcons.person_circle)),
+          BottomNavigationBarItem(
+              label: "My배민",
+              icon: IconButton(
+                  padding: EdgeInsets.zero, // 패딩 설정
+                  constraints: BoxConstraints(),
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => MyBeamin()));
+                  },
+                  icon: Icon(CupertinoIcons.person_circle))),
         ],
       ),
       body: IndexedStack(
@@ -79,7 +49,6 @@ class _MainPageState extends State<MainPage> {
           Search(),
           PavoriteStore(),
           OrderList(),
-          MyBeamin(),
         ],
       ),
     );

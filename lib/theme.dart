@@ -26,6 +26,16 @@ AppBarTheme appTheme() {
   );
 }
 
+TextButtonThemeData styleFrom() {
+  return TextButtonThemeData(
+    style: TextButton.styleFrom(
+      minimumSize: Size.zero,
+      padding: EdgeInsets.zero,
+      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+    ),
+  );
+}
+
 ThemeData theme() {
   return ThemeData(
     scaffoldBackgroundColor: Colors.white,
