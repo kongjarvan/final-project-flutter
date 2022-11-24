@@ -1,9 +1,9 @@
 import 'package:beamin_prototype/theme.dart';
 import 'package:beamin_prototype/view/pages/main/home/home_page.dart';
-import 'package:beamin_prototype/view/pages/main/my_beamin/my_beamin.dart';
 import 'package:beamin_prototype/view/pages/main/order_list/order_list.dart';
 import 'package:beamin_prototype/view/pages/main/pavorite_store/pavorite_store.dart';
 import 'package:beamin_prototype/view/pages/main/search/search.dart';
+import 'package:beamin_prototype/view/pages/my_beamin/my_beamin.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

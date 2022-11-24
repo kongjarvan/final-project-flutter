@@ -25,7 +25,7 @@ class MyBeamin extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.pop(context, MaterialPageRoute(builder: (context) => MainPage()));
+              Navigator.pop(context, MaterialPageRoute(builder: (context) => HomePage()));
             },
             icon: Icon(
               CupertinoIcons.home,
