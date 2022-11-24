@@ -48,6 +48,7 @@ class Search extends StatelessWidget {
             children: [
               SizedBox(width: 8),
               Icon(
+                size: 24,
                 CupertinoIcons.search,
                 color: Colors.grey,
               ),
@@ -137,7 +138,7 @@ class Search extends StatelessWidget {
         TextButton(
           onPressed: () {},
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16),
+            padding: const EdgeInsets.all(8),
             child: Row(
               children: [
                 ClipRRect(
@@ -158,11 +159,11 @@ class Search extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star, size: 16),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star, size: 16, color: Colors.orangeAccent),
                       ],
                     ),
                     SizedBox(height: 8),
@@ -186,7 +187,7 @@ class Search extends StatelessWidget {
         TextButton(
           onPressed: () {},
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16),
+            padding: const EdgeInsets.all(8),
             child: Row(
               children: [
                 ClipRRect(
@@ -207,17 +208,17 @@ class Search extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star, size: 16),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star, size: 16, color: Colors.orangeAccent),
                       ],
                     ),
                     SizedBox(height: 8),
                     Text("배달 예상 시간 : 38 ~ 42분", style: textTheme().bodyText2),
                     SizedBox(height: 8),
-                    Text("배달비: 2900원", style: textTheme().bodyText2),
+                    Text("배달비: 무료", style: textTheme().bodyText2),
                   ],
                 )
               ],
@@ -235,7 +236,7 @@ class Search extends StatelessWidget {
         TextButton(
           onPressed: () {},
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16),
+            padding: const EdgeInsets.all(8),
             child: Row(
               children: [
                 ClipRRect(
@@ -256,17 +257,17 @@ class Search extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star_fill, size: 16),
-                        Icon(CupertinoIcons.star, size: 16),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star_fill, size: 16, color: Colors.orangeAccent),
+                        Icon(CupertinoIcons.star, size: 16, color: Colors.orangeAccent),
                       ],
                     ),
                     SizedBox(height: 8),
                     Text("배달 예상 시간 : 38 ~ 42분", style: textTheme().bodyText2),
                     SizedBox(height: 8),
-                    Text("배달비: 무료", style: textTheme().bodyText2),
+                    Text("배달비: 2900원", style: textTheme().bodyText2),
                   ],
                 )
               ],

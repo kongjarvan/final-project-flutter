@@ -53,14 +53,6 @@ class HomePage extends StatelessWidget {
       title: Text("김민철", style: textTheme().headline1),
       centerTitle: true,
       elevation: 1.0,
-      leading: IconButton(
-        onPressed: () {},
-        icon: Icon(
-          CupertinoIcons.left_chevron,
-          size: 35,
-          color: Colors.black,
-        ),
-      ),
       actions: [
         IconButton(
           onPressed: () {},

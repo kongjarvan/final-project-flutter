@@ -23,6 +23,10 @@ class _MainPageState extends State<MainPage> {
         onTap: (index) {
           setState(() {
             _selectedIndex = index;
+            if (index == 4) {
+              _selectedIndex = 0;
+              Navigator.push(context, MaterialPageRoute(builder: (context) => MyBeamin()));
+            }
           });
         },
         currentIndex: _selectedIndex,
@@ -31,15 +35,7 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(label: "검색", icon: Icon(CupertinoIcons.search)),
           BottomNavigationBarItem(label: "찜한가게", icon: Icon(CupertinoIcons.heart)),
           BottomNavigationBarItem(label: "주문내역", icon: Icon(CupertinoIcons.doc_plaintext)),
-          BottomNavigationBarItem(
-              label: "My배민",
-              icon: IconButton(
-                  padding: EdgeInsets.zero, // 패딩 설정
-                  constraints: BoxConstraints(),
-                  onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => MyBeamin()));
-                  },
-                  icon: Icon(CupertinoIcons.person_circle))),
+          BottomNavigationBarItem(label: "My배민", icon: Icon(CupertinoIcons.person_circle)),
         ],
       ),
       body: IndexedStack(
@@ -49,6 +45,7 @@ class _MainPageState extends State<MainPage> {
           Search(),
           PavoriteStore(),
           OrderList(),
+          MyBeamin(),
         ],
       ),
     );
